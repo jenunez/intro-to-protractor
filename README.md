@@ -21,7 +21,16 @@ Before you begin we recommend you read about the basic building blocks that asse
 * Express - The best way to understand express is through its [Official Website](http://expressjs.com/), particularly [The Express Guide](http://expressjs.com/guide.html); you can also go through this [StackOverflow Thread](http://stackoverflow.com/questions/8144214/learning-express-for-node-js) for more resources.
 * AngularJS - Angular's [Official Website](http://angularjs.org/) is a great starting point. You can also use [Thinkster Popular Guide](http://www.thinkster.io/), and the [Egghead Videos](https://egghead.io/).
 * Node.js - Start by going through [Node.js Official Website](http://nodejs.org/) and this [StackOverflow Thread](http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js), which should get you going with the Node.js platform in no time.
+* Install protractor
 
+```
+$ npm install -g protrator
+```
+* Update webdriver manager
+
+```
+$ webdriver-manager update
+```
 
 ## Prerequisites
 Make sure you have installed all these prerequisites on your development machine.
@@ -80,6 +89,27 @@ After the install process is over, you'll be able to run your application using 
 
 ```
 $ grunt
+```
+
+If this gives next error:
+
+```
+grunt-cli: The grunt command line interface (v1.3.1)
+
+Fatal error: Unable to find local grunt.
+
+If you're seeing this message, grunt hasn't been installed locally to
+your project. For more information about installing and configuring grunt,
+please see the Getting Started guide:
+
+https://gruntjs.com/getting-started
+
+```
+
+ run
+
+```
+$ npm install grunt --save-dev
 ```
 
 Your application should run on the 3000 port so in your browser just go to [http://localhost:3000](http://localhost:3000)
